@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="act">
+      <%= link_to 'Add Recipe', new_recipe_path %>
+      <%= link_to "New recipe_food", new_recipe_food_path %>
+    </div>
+ 
+
+  <% @recipes.each do |recipe| %>
+    <div class="recipe">
+      <div class="action">
+      <h3><td><%= link_to "#{recipe.name}", recipe, method: :delete, class: "remove-btn" %></h3>
+        <%= button_to 'REMOVE', recipe, method: :delete, class: 'remove-btn' %>
+      </div>
+      <div class="description">
+        <p><%= recipe.description %></p>
+      </div>
+    </div>
+  <% end %>
+  </div>

@@ -1,0 +1,24 @@
+<!-- app/views/shared/_navbar.html.erb -->
+
+<nav class="navbar">
+<ul class="nav-items">
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Food List', foods_path %></li>
+    <li><%= link_to 'Recipes List', recipes_path %></li>
+    <li><%= link_to 'Shopping List', shopping_list_index_path %></li>
+  </ul>
+  <ul class="nav-items">
+  <% if user_signed_in? %>
+  <li>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn' %>
+  </li>
+<% else %>
+  <li>
+    <%= link_to 'Login', new_user_session_path, class: 'btn' %>
+  </li>
+  <li>
+    <%= link_to 'Sign-up', new_user_registration_path, class: 'btn' %>
+  </li>
+<% end %>
+</ul>
+</nav>
