@@ -1,0 +1,69 @@
+/* app/assets/stylesheets/foods/show.css */
+
+/* Style for the notice message */
+.notice {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.foodss {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the food details */
+.food-details {
+  margin-top: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.food-details p {
+  margin: 5px 0;
+}
+
+/* Style for the links and buttons */
+.actions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 3px;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  width: 30px;
+  text-align: center;
+}
+
+.actions a.edit-link {
+  background-color: #007bff;
+}
+
+.actions a.back-link {
+  background-color: #ffc107;
+}
+
+.delete-button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  background-color: #f44;
+}

@@ -1,0 +1,42 @@
+/* app/assets/stylesheets/shared/navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background-color: #0056b3;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+/* Stick the navbar to the top of the page */
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.nav-items {
+  list-style: none;
+}

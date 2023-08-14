@@ -1,0 +1,18 @@
+<!-- app/views/foods/show.html.erb -->
+
+<p class="notice"><%= notice %></p>
+<div class="foodss">
+
+<div class="food-details">
+  <p><strong>Name:</strong> <%= @food.name %></p>
+  <p><strong>Measurement Units:</strong> <%= @food.measurement_units %></p>
+  <p><strong>Price:</strong> <%= @food.price %></p>
+  <p><strong>Quantity:</strong> <%= @food.quantity %></p>
+  <p><strong>Public:</strong> <%= @food.public %></p>
+</div>
+
+<div class="actions">
+  <%= link_to "Back", foods_path, class: "back-link" %>
+  <%= button_to "Delete", @food, method: :delete, class: "delete-button" %>
+</div>
+</div>

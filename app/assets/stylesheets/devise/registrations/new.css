@@ -1,0 +1,54 @@
+/* app/assets/stylesheets/registrations/new.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the container height to fill the viewport */
+}
+
+h2 {
+  color: blue;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.field {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 300px; /* Set the width of the field containers */
+}
+
+/* Style the label and input fields within the .field container */
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add some spacing between the fields */
+.field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+/* Add responsive styling for different screen sizes */
+@media (max-width: 768px) {
+  .field {
+    width: 100%; /* On smaller screens, make the field containers full width */
+  }
+}

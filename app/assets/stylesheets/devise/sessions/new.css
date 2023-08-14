@@ -1,0 +1,50 @@
+/* app/assets/stylesheets/new.css */
+
+.container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the container height to fill the viewport */
+}
+
+h2 {
+  color: blue;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.field {
+  padding: 5px;
+  margin-bottom: 3px;
+  width: 300px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .field {
+    width: 100%;
+  }
+}

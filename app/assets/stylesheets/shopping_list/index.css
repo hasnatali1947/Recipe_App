@@ -1,0 +1,16 @@
+.shoppingContainer {
+  width: 100%;
+}
+
+.sho {
+  margin-top: 100px;
+  margin-left: 45%;
+}
+
+.shops {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+}
