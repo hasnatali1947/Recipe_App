@@ -1,0 +1,38 @@
+.recipe-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.gret {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.recip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.treess {
+  padding-left: 5%;
+}
+
+.treess a {
+  color: #fff;
+  width: 15px;
+  background-color: #4285f4;
+  border: none;
+  padding: 2px 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.treess a:hover {
+  background-color: #3367d6;
+}

@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.publicRecipes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+  margin-bottom: 30px;
+  width: 80vh;
+}
